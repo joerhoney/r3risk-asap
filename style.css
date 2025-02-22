@@ -1,0 +1,104 @@
+:root {
+  --font-default: Georgia, serif;
+  --font-heading: "Bebas Neue", serif;
+  --font-size: 1rem;
+  --line-height: 1.5;
+  --color: #000;
+  --background-color: #fff;
+  --border: 1px solid #000;
+  --border-radius: 4px;
+  --padding: 5vw;
+  --margin: 5vw;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+body {
+  font-family: var(--font-default);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color);
+  background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+.logo {
+  background-image: url("assets/r3risk-logo-917.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 122px;
+  margin: 0 auto 0 0;
+  position: fixed;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: var(--font-heading); */
+  font-family: "Barlow Condensed", serif;
+}
+:has(.section) {
+  container: sections / inline-size;
+}
+.section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  width: auto;
+  min-height: 100vh;
+  padding: 1rem;
+  margin: 0;
+}
+.section-card {
+  background-color: var(--background-color);
+  color: var(--color);
+  padding: var(--padding);
+  margin: var(--margin);
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.section-description {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+.footer {
+  background-color: var(--color);
+  color: var(--background-color);
+  padding: var(--padding);
+  margin: 0;
+}
+/* Slides */
+/* 
+.addFuncSlides .slides {
+  position: relative;
+}
+
+.addFuncSlides .slides > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s ease 3s;
+}
+
+.addFuncSlides .slides > .current {
+  position: relative;
+  display: block;
+  opacity: 1;
+  transition: opacity 3s ease;
+} 
+*/
