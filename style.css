@@ -74,6 +74,9 @@ html {
     opacity: 1;
     background-color: var(--nav-menu-bg-focus);
   }
+  .nav-menu > a:hover {
+    color: black;
+  }
   .nav-menu::before {
     position: absolute;
     transition: all var(--trans-speed) ease;
