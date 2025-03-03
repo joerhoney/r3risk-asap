@@ -72,12 +72,16 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   display: flex;
   width: auto;
   min-height: 100vh;
   padding: 1rem;
   margin: 0;
+}
+@supports (background-attachment: fixed) {
+  .section {
+    background-attachment: fixed;
+  }
 }
 .section-card {
   background-color: var(--background-color);
