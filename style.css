@@ -108,7 +108,7 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@supports (background-attachment: fixed) {
+@supports (-webkit-touch-callout: none) {
   .bg-fixed-if {
     background-attachment: fixed;
   }
