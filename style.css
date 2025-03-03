@@ -68,7 +68,7 @@ html {
 }
 @media (width <= 440px) {
   .nav-menu:focus-within {
-    transform: translate(-64px, 64px) scale(4);
+    transform: translate(-80px, 72px) scale(4);
   }
   .nav-menu:focus-within > a {
     opacity: 1;
@@ -108,7 +108,7 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@supports (-webkit-touch-callout: none) {
+@supports not (-webkit-touch-callout: none) {
   .bg-fixed-if {
     background-attachment: fixed;
   }
