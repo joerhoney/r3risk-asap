@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>R3 Risk</title>
-    <link rel="icon" href="/assets/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
     <!-- <link rel="icon" href="/assets/icon.svg" type="image/svg+xml"> -->
     <link rel="apple-touch-icon" href="/assets/r3risk-app-icon-180.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,115 +14,36 @@
     />
     <!-- Add Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      p {
-        color: black;
-        font-family: Georgia, serif;
-      }
-      .font-barlow {
-        font-family: "Barlow Condensed", sans-serif;
-      }
-      .font-georgia {
-        font-family: Georgia, serif;
-      }
-      .symbol,
-      .feature-box {
-        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%20361%20361%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aserif%3D%22http%3A%2F%2Fwww.serif.com%2F%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A2%3B%22%3E%3Cpath%20id%3D%22Artboard1%22%20d%3D%22M377.742%2C19.67l-37.393%2C358.071l-358.072%2C-37.393l37.393%2C-358.071l358.072%2C37.393Z%22%20style%3D%22fill%3Anone%3B%22%2F%3E%3Cg%20id%3D%22Icon%22%20opacity%3D%220.3%22%3E%3Cg%20id%3D%22Logo--Revised-%22%20serif%3Aid%3D%22Logo%22%3E%3Cpath%20d%3D%22M107.433%2C283.238c-34.737%2C-24.213%20-56.383%2C-65.123%20-54.444%2C-109.79l-40.082%2C-4.186l1.623%2C-15.541l40.081%2C4.186c10.506%2C-63.196%2066.796%2C-108.842%20130.8%2C-106.063l4.186%2C-40.082l15.54%2C1.623l-4.186%2C40.082c63.196%2C10.504%20108.841%2C66.796%20106.064%2C130.798l40.082%2C4.186l-1.623%2C15.541l-40.082%2C-4.186c-7.332%2C44.104%20-36.963%2C79.66%20-75.953%2C96.173l13.092%2C-14.916c30.703%2C-18.823%2052.63%2C-51.208%2056.655%2C-89.76c6.87%2C-65.78%20-40.958%2C-124.762%20-106.738%2C-131.631c-65.779%2C-6.869%20-124.762%2C40.958%20-131.631%2C106.739c-4.026%2C38.551%2010.736%2C74.768%2036.888%2C99.528l9.728%2C17.299Zm106.953%2C29.894c49.845%2C-12.792%2089.832%2C-52.868%20101.06%2C-104.903l15.625%2C1.631c-13.421%2C65.728%20-67.973%2C114.669%20-133.301%2C122.204l16.616%2C-18.932Zm-83.423%2C11.956c-62.36%2C-20.87%20-105.625%2C-80.026%20-105.176%2C-147.108l15.624%2C1.631c0.235%2C53.233%2031.079%2C100.706%2077.206%2C123.519l12.346%2C21.958Zm-102.047%2C-177.154c14.65%2C-71.949%2078.584%2C-123.803%20152.004%2C-123.292l-1.632%2C15.623c-64.823%2C0.267%20-121.112%2C45.923%20-134.749%2C109.301l-15.623%2C-1.632Zm182.049%2C-120.154c71.941%2C14.668%20123.782%2C78.613%20123.251%2C152.036l-15.623%2C-1.631c-0.247%2C-64.827%20-45.89%2C-121.128%20-109.26%2C-134.782l1.632%2C-15.623Z%22%20style%3D%22fill%3A%23808080%3B%22%2F%3E%3Cpath%20d%3D%22M190.28%2C80.433c27.447%2C2.866%2047.402%2C27.477%2044.536%2C54.923c-1.382%2C13.238%20-7.823%2C24.733%20-17.2%2C32.766c-8.826%2C7.561%20-35.641%2C31.958%20-38.447%2C58.825l-8.289%2C-0.866c2.799%2C-26.801%20-18.39%2C-56.277%20-25.463%2C-65.499c-7.515%2C-9.797%20-11.442%2C-22.374%20-10.06%2C-35.612c2.866%2C-27.446%2027.476%2C-47.403%2054.923%2C-44.537Zm-2.272%2C21.757c-15.439%2C-1.612%20-29.282%2C9.614%20-30.894%2C25.052c-1.612%2C15.439%209.612%2C29.281%2025.052%2C30.894c15.439%2C1.612%2029.281%2C-9.613%2030.894%2C-25.052c1.612%2C-15.438%20-9.613%2C-29.282%20-25.052%2C-30.894Zm-13.233%2C126.45l-16.623%2C8.737l8.613%2C-2.243l2.134%2C9.649l-6.957%2C26.505l-11.166%2C-93.389l-2.072%2C-0.216l-9.153%2C7.422l-31.947%2C5.044l-16.766%2C40.199l70.663%2C125.671l95.102%2C-108.361l-8.099%2C-42.795l-30.215%2C-11.535l-7.423%2C-9.154l-2.071%2C-0.216l-30.276%2C89.061l-1.332%2C-27.37l4.082%2C-9l7.964%2C3.974l-14.458%2C-11.983Z%22%20style%3D%22fill%3A%23808080%3B%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-      }
-      .symbol {
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 75%;
-        background-position: 160% 70%;
-      }
-      .feature-box {
-        background-attachment: local;
-        background-repeat: no-repeat;
-        background-position: 110% -1rem;
-        background-size: 50%;
-        display: inline-block;
-        padding: 5rem 1.4rem 2rem 2rem;
-      }
-      .linkedin {
-        background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2037%2037%22%20fill%3D%22none%22%0Axmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22w-full%20h-full%22%3E%3Cpath%20d%3D%22M34.0417%200H2.95833C1.32583%200%200%201.32583%200%202.95833V34.0417C0%2035.6742%201.32583%2037%202.95833%2037H34.0417C35.6742%2037%2037%2035.6742%2037%2034.0417V2.95833C37%201.32583%2035.6742%200%2034.0417%200ZM11.0833%2031.5833H5.54167V13.875H11.0833V31.5833ZM8.3125%2011.4608C6.5175%2011.4608%205.0625%2010.0058%205.0625%208.21083C5.0625%206.41583%206.5175%204.96083%208.3125%204.96083C10.1075%204.96083%2011.5625%206.41583%2011.5625%208.21083C11.5625%2010.0058%2010.1075%2011.4608%208.3125%2011.4608ZM31.5833%2031.5833H26.0417V22.9625C26.0417%2020.9183%2026.0108%2018.2467%2023.1508%2018.2467C20.26%2018.2467%2019.8117%2020.4925%2019.8117%2022.8083V31.5833H14.27V13.875H19.5742V16.2892H19.6358C20.3742%2014.8958%2022.1692%2013.4408%2024.8408%2013.4408C30.4517%2013.4408%2031.5833%2017.1275%2031.5833%2021.9225V31.5833Z%22%20fill%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E");
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      .text-stroke-white {
-        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-          1px 1px 0 white;
-      }
-      .vert-line-black,
-      .vert-line-white {
-        position: relative;
-      }
-      .vert-line-black::before,
-      .vert-line-white::before {
-        content: "";
-        background-color: black;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -1.5rem;
-        height: 100%;
-        width: 4px;
-        background-color: black;
-      }
-      .vert-line-white::before {
-        background-color: white;
-      }
-      .pg-margin {
-        margin-left: 3rem;
-      }
-      @media (min-width: 640px) {
-        .vert-line-black::before,
-        .vert-line-white::before {
-          left: -2rem;
-        }
-        .pg-margin {
-          margin-left: 5rem;
-        }
-      }
-      .drawer {
-        overflow: hidden;
-        max-height: 0;
-      }
-    </style>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <!-- <script src="scripts.js" defer></script> -->
   </head>
   <body class="m-0 p-0">
     <!-- Fixed Navigation Bar -->
-    <nav
-      class="fixed top-0 left-0 right-0 p-4 flex gap-8 justify-start items-center z-50"
-    >
+    <nav class="nav-bar fixed top-0 left-0 right-0 p-4 z-50">
       <!-- Logo -->
-      <img
+      <a href="#home">
+        <img
         src="assets/r3risk-logo-917.webp"
         alt="R3 Risk Logo"
-        class="w-20 h-11"
-      />
-
-      <!-- Navigation Links -->
-      <div class="flex space-x-8">
-        <a
-          href="#services"
-          class="text-stroke-white font-barlow font-bold text-base text-black hover:text-blue-900 text-lg transition-colors"
-          >Our Services</a
-        >
-        <a
-          href="#team"
-          class="text-stroke-white font-barlow font-bold text-base text-black hover:text-blue-900 text-lg transition-colors"
-          >Our Team</a
-        >
-        <a
-          href="#contact"
-          class="text-stroke-white font-barlow font-bold text-base text-black hover:text-blue-900 text-lg transition-colors"
-          >Contact Us</a
-        >
+        class="h-11 mr-8" />
+    </a>
+      <div class="nav-menu" tabindex="1" aria-label="Navigation Menu">
+          <a
+            href="#services"
+            class="font-barlow font-bold text-black hover:text-blue-900">
+            Our Services
+          </a>
+          <a
+            href="#team"
+            class="font-barlow font-bold text-black hover:text-blue-900">
+            Our Team
+          </a>
+          <a
+            href="#contact"
+            class="font-barlow font-bold text-black hover:text-blue-900">
+            Contact Us
+          </a>
+        </div>
       </div>
     </nav>
 
@@ -132,7 +53,7 @@
       class="hero symbol relative w-full min-h-screen overflow-hidden pt-16"
     >
       <!-- Content Container -->
-      <div class="pg-margin vert-line-black mt-16 mb-8">
+      <div class="page-margin vert-line-black my-16">
         <!-- Heading Text -->
         <h1 class="font-barlow font-bold text-5xl text-black mb-8 mr-8">
           Your Preeminent Crisis Response Solution
@@ -155,19 +76,19 @@
     <section id="services" class="w-full">
       <!-- Section Title -->
       <h2
-        class="symbol pg-margin vert-line-black font-barlow font-bold text-3xl text-black pb-10"
+        class="symbol page-margin vert-line-black font-barlow font-bold text-3xl text-black pb-10"
       >
         Our Services
       </h2>
       <!-- Our Services: Security -->
       <div
-        class="relative bg-cover bg-fixed bg-center justify-center relative w-full min-h-screen"
+        class="relative bg-fixed-if bg-cover bg-center justify-center relative w-full min-h-screen"
         style="
           background-image: url(assets/man-in-suit-helps-woman-out-of-car-0.webp);
         "
       >
         <h3
-          class="feature-box sticky top-0 pg-margin w-96 vert-line-black bg-black font-barlow font-bold text-4xl leading-tight text-white"
+          class="feature-box sticky top-0 page-margin vert-line-black bg-black font-barlow font-bold text-4xl leading-tight text-white"
         >
           Security Services
         </h3>
@@ -175,11 +96,11 @@
 
       <!-- Our Services: Medical -->
       <div
-        class="relative bg-cover bg-fixed bg-center justify-center relative w-full min-h-screen"
+        class="relative bg-fixed-if bg-cover bg-fixed bg-center justify-center relative w-full min-h-screen"
         style="background-image: url(assets/pexels-rdne-6520137.webp)"
       >
         <h3
-          class="feature-box sticky top-0 pg-margin w-96 vert-line-black bg-black font-barlow font-bold text-4xl leading-tight text-white"
+          class="feature-box sticky top-0 page-margin vert-line-black bg-black font-barlow font-bold text-4xl leading-tight text-white"
         >
           Medical Support
         </h3>
@@ -187,11 +108,11 @@
 
       <!-- Our Services: High Risk Training -->
       <div
-        class="relative bg-cover bg-fixed justify-center relative w-full min-h-screen"
+        class="relative bg-fixed-if bg-cover bg-fixed justify-center relative w-full min-h-screen"
         style="background-image: url(assets/training-staff-2.webp)"
       >
         <h3
-          class="feature-box sticky top-0 pg-margin w-96 vert-line-black bg-black font-barlow font-bold text-4xl leading-tight text-white"
+          class="feature-box sticky top-0 page-margin vert-line-black bg-black font-barlow font-bold text-4xl leading-tight text-white"
         >
           High Risk Training
         </h3>
@@ -202,11 +123,11 @@
     <section id="team" class="symbol bg-black py-16 text-white">
       <!-- Section Title -->
       <h2
-        class="pg-margin vert-line-white font-barlow font-bold text-3xl text-white pb-10"
+        class="page-margin vert-line-white font-barlow font-bold text-3xl text-white pb-10"
       >
         Our Team
       </h2>
-      <div class="pg-margin mr-8 vert-line-white">
+      <div class="page-margin mr-8 vert-line-white">
         <!-- Team Members Container -->
         <div class="flex flex-col md:flex-row justify-between gap-8">
           <!-- Team Member 1 -->
@@ -385,13 +306,13 @@
     <!-- Contact Section -->
     <section id="contact" class="symbol vert-line-black py-16">
       <h2
-        class="font-barlow font-bold text-4xl pg-margin pb-10 vert-line-black"
+        class="font-barlow font-bold text-4xl page-margin pb-10 vert-line-black"
       >
         Contact Us
       </h2>
 
       <div
-        class="flex flex-col sm:flex-row items-start gap-8 pg-margin vert-line-black"
+        class="flex flex-col sm:flex-row items-start gap-8 page-margin vert-line-black"
       >
         <div class="flex gap-3 flex-col">
           <!-- Email Button -->
@@ -411,7 +332,7 @@
           </a>
         </div>
 
-        <div class="lg:pg-margin">
+        <div class="lg:page-margin">
           <!-- Logo -->
           <img
             src="assets/r3risk-logo-917.webp"
@@ -429,7 +350,7 @@
 
     <!-- Footer -->
     <footer class="symbol bg-black text-white py-16">
-      <div class="vert-line-white pg-margin">
+      <div class="vert-line-white page-margin">
         <p class="font-georgia text-sm text-white pb-2">
           &copy; 2025 R3 Risk. All rights reserved.
         </p>
