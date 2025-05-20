@@ -18,7 +18,7 @@
   --speed: 0.3s;
   --vert-line: -1.25rem;
 }
-@media (width > 440px) {
+@media (width > 590px) {
   :root {
     --nav-text: 1.125rem;
     --nav-gap: 2rem;
@@ -32,8 +32,15 @@
     --nav-links-opacity: 1;
     --nav-links-stroke: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
       1px 1px 0 white;
+    --nav-links-stroke-hover: -1px -1px 0 white, 1px -1px 0 white,
+      -1px 1px 0 white, 1px 1px 0 white, 0 0 5px white, 0 0 40px white,
+      0 0 120px white;
     --nav-link-width: 100%;
     --nav-links-z: initial;
+  }
+}
+@media (width > 440px) {
+  :root {
     --page-margin: 5rem;
     --vert-line: -2rem;
   }
@@ -67,7 +74,11 @@ html {
   text-shadow: var(--nav-links-stroke);
   white-space: nowrap;
 }
-@media (width <= 440px) {
+.nav-menu > a:focus,
+.nav-menu > a:hover {
+  text-shadow: var(--nav-links-stroke-hover);
+}
+@media (width <= 590px) {
   .nav-menu:focus-within {
     transform: translate(-80px, 72px) scale(4);
   }
@@ -101,6 +112,11 @@ p {
 }
 .font-georgia {
   font-family: Georgia, serif;
+}
+.text-glow,
+.hover\:text-glow:hover {
+  text-shadow: 0 0 3px currentColor, 0 0 36px currentColor,
+    0 0 120px currentColor;
 }
 .symbol,
 .feature-box {
