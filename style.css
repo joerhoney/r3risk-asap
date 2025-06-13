@@ -48,6 +48,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  font-family: Georgia, serif;
+}
 .nav-bar {
   display: flex;
   justify-content: var(--nav-bar-justify);
@@ -114,9 +117,29 @@ p {
   font-family: Georgia, serif;
 }
 .text-glow,
-.hover\:text-glow:hover {
+.hover\:text-glow:focus,
+.hover\:text-glow:hover,
+.button:focus,
+.button:hover {
   text-shadow: 0 0 3px currentColor, 0 0 36px currentColor,
     0 0 120px currentColor;
+}
+.button {
+  display: inline-block;
+  background-color: black;
+  padding-top: clamp(0.25rem, 1vw, 0.75rem);
+  padding-right: clamp(1.5rem, 2.5vw, 2rem);
+  padding-bottom: clamp(0.5rem, 1.25vw, 1rem);
+  padding-left: clamp(1.5rem, 2.5vw, 2rem);
+  color: white;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.button:hover {
+  background-color: #112266;
 }
 .symbol,
 .feature-box {
@@ -167,8 +190,57 @@ p {
 .vert-line-white::before {
   background-color: white;
 }
-.page-margin {
+.corner-line-black,
+.corner-line-white {
+  border: 0px solid black;
+  border-width: 0px 0px 4px 4px;
+}
+.corner-line-white {
+  border-color: white;
+}
+#mc-embedded-subscribe-form {
+  margin-bottom: 0;
+}
+.mc-field-group {
+  position: relative;
+}
+.mc-field-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 12px 0;
+  /* display: block; */
+  color: black;
+  font-weight: bold;
+  font-size: 0.8em;
+  line-height: 1;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+.mc-field-group input[type="text"],
+.mc-field-group input[type="email"] {
+  border-width: 0px 0px 0px 4px;
+  border-color: #d9d9d9;
+  background: #d9d9d9;
+  padding: 1.5em 8px 8px;
+  width: 100%;
+  color: black;
+}
+.mce_inline_error {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.mc-field-group input[type="text"]:active,
+.mc-field-group input[type="text"]:focus,
+.mc-field-group input[type="email"]:active,
+.mc-field-group input[type="email"]:focus {
+  outline: none;
+  border-color: black;
+}
+.ml-page {
   margin-left: var(--page-margin);
+}
+.mr-page {
+  margin-right: var(--page-margin);
 }
 .drawer {
   display: grid;
