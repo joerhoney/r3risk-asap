@@ -125,7 +125,6 @@ p {
     0 0 120px currentColor;
 }
 .button {
-  display: inline-block;
   border-radius: 0%;
   background-color: black;
   padding-top: clamp(0.25rem, 1vw, 0.75rem);
@@ -190,6 +189,10 @@ p {
 }
 .vert-line-white::before {
   background-color: white;
+}
+.-vert-line-top::before {
+  top: 0.54rem;
+  height: calc(100% - 0.54rem);
 }
 .corner-line-black,
 .corner-line-white {
